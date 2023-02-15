@@ -32,7 +32,7 @@ img{
 .contenedor{
     max-width: 120rem;
 }
-h1,h2,h3,h4{
+h1,h2,h3{
     text-align: center;
     /* font-family: var(--fuentePrincipal); */
     font-family: 'Staatliches', cursive;
@@ -128,21 +128,64 @@ h3{font-size: 2.4rem;}
 /* PRESENTACION */
 
 #presentacion{
-    margin-top: 35rem;
-    display: flex;
-    flex-direction: row;
-    /* margin-right: 10rem; */
-    margin-left: 30rem;
-    /* display: flex; */
-}
-#contenido__presentacion{
+    margin-top: 15rem;
     display: flex;
     flex-direction: column;
-}
-.texto-presentacion{
-    
+    justify-content: center;
+    /* margin-right: 10rem; */
+    /* margin-left: 30rem; */
+    /* display: flex; */
+    height: 90rem;
+    background-image: url("../media/fondo-header.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
 }
 
+.contenedor-presentacion{
+    
+}
+.contenedor-textos{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    
+}
+#imagen-jugador img{
+    /* display: none; */
+    size: cover;
+}
+.eslogan__presentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 10px;
+    border: 1px solid rgba(0,0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0,0, 0, 0.5); */
+    
+    background-color: none;
+    margin: 3rem;
+}
+.eslogan__presentacion h2{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    text-shadow: #000;
+}
+.contenedor-textos{
+    
+}
+.contenedor-textos h2{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 4rem;
+}
+.contenedor-textos h4{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 8rem;
+}
+.texto-presentacion{
+    margin: 0;
+}
 /* #imagen-jugador{
     
     display: flex;
@@ -153,6 +196,10 @@ h3{font-size: 2.4rem;}
 
 } */
 @media (min-width: 780px){
+    #presentacion{
+        background-size: cover;
+        flex-direction: row;
+    }
      #imagen-jugador{
         display: flex;
         justify-content: right;
@@ -167,6 +214,29 @@ h3{font-size: 2.4rem;}
     }
     #imagen-jugador img:hover{
         filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
+    }
+    .contenedor-presentacion{
+        margin-top: 5rem;
+        /* margin-left: 45rem; */
+    }
+    #contenido__presentacion{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .contenedor-presentacion{
+    
+    }
+    .eslogan__presentacion{
+        display: none;
+    }
+    .contenedor-textos h2{
+        font-family: 'Alegreya Sans SC', sans-serif;
+        font-size: 6rem;
+    }
+    .contenedor-textos h4{
+        font-family: 'Alegreya Sans SC', sans-serif;
+        font-size: 15rem;
     }
 
 }
