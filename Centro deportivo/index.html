@@ -26,6 +26,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Centro deportivo</title>
 </head>
 <body>
@@ -34,13 +36,14 @@
         <header class="header">
             <a class="header__logo" href="index.html">
                 <!-- <img class="header__logo"src="media/logo1.png" alt="logo"> -->
-                CENTRO DEPORTIVO COTOPAXI
+                CENTRO DEPORTIVO PATAIN
             </a>
         </header>
         <nav class="navegacion">
-            <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Inicio</a>
-            <a class="navegacion__enlace" href="deportes.html">Deportes</a>
+            <!-- <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Inicio</a> -->
+            <a class="navegacion__enlace navegacion__enlace--activo" href="#presentacion">Inicio</a>
             <a class="navegacion__enlace" href="about.html">Quienes Somos</a>
+            <a class="navegacion__enlace" href="deportes.html">Programas y actividades</a>
             <a class="navegacion__enlace" href="copa_patain.html">Copa Pataín</a>
             
         </nav>
@@ -49,13 +52,13 @@
         <div class="contenedor-presentacion">
 
             <div id="contenido__presentacion">
-                <div class="contenedor-textos">
-                    <h2 class="texto-presentacion">CENTRO DEPORTIVO</h2>
-                    <h4 class="texto-presentacion">COTOPAXI</h4>
+                <div class="contenedor-textos" data-aos="fade-down" data-aos-duration="1000">
+                    <h2 class="texto-presentacion">CENTRO DE FORMACIÓN DEPORTIVA </h2>
+                    <h4 class="texto-presentacion">PATAIN </h4>
                     
                 </div>
             </div>
-            <div id="imagen-jugador">
+            <div id="imagen-jugador" data-aos="zoom-in-down"data-aos-duration="1000">
                 <img src="media/Football_Player.png" alt="presentacion-jugador">
             </div>
             
@@ -67,6 +70,52 @@
         
 
     </section>
+    <section id="servicios">
+        <h2 class="titulo__servicios"data-aos="fade-right">
+            Conoce nuestros servicios
+        </h2>
+        <div class="contenedor__servicios"data-aos="fade-up-right" data-aos-duration="1000">
+            <div class="servicio">
+                <div class="img__servicio">
+
+                    <img src="media/estadio.svg" alt="">
+                    <img src="media/asesoria1.svg" alt="">
+                </div>
+
+                <h6>Asesoría y organización de eventos recreativos/deportivos.</h6>
+            </div>
+            <div class="servicio">
+                <img src="media/cup.svg" alt="">
+                <h6>COPA PATAIN</h6>
+            </div>
+            <div class="servicio">
+                <img src="media/juegos_tradicionales.jpg" alt="">
+                <h6>Organización y supervisión de los Juegos Laborales, Juegos Tradicionales de la Parroquia de Panzaleo.</h6>
+
+            </div>
+            <div class="servicio">
+                <img src="media/gimnasta.svg" alt="">
+                <h6>Gimnastrada Patain.</h6>
+            </div>
+            <div class="servicio">
+                <img src="media/talentos.svg" alt="">
+                <h6>Festivales de destrezas para la captación de talentos.</h6>
+            </div>
+            <div class="servicio">
+                <img src="media/rural.svg" alt="">
+                <h6>Implementación de proyectos especiales deportivos en zonas rurales del país</h6>
+            </div>
+            <div class="servicio">
+                <img src="media/asesoramiento.svg" alt="">
+                <h6>Asesorar a los gobiernos locales en la implementación y ejecución de las escuelas deportivas.</h6>
+            </div>
+            <div class="servicio">
+                <img src="media/mayoredad.svg" alt="">
+                <h6>Actividades Deportivas para el Adulto Mayor.</h6>
+            </div>
+        </div>
+    </section>
     
 </body>
+<script src="js/aos_animate.js"></script>
 </html>

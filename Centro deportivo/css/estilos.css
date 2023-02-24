@@ -7,6 +7,7 @@
 html{
     box-sizing: border-box;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 *,*:before,*:after{
     box-sizing: inherit;
@@ -85,7 +86,23 @@ h3{font-size: 2.4rem;}
     font-family: 'Staatliches', cursive;
     color: #fff;
     border-color: #000;
-    font-size: 4rem;
+    font-size: 2rem;
+    
+}
+@media (min-width: 780PX){
+    .header__logo{
+    
+        height: 15rem;
+    
+    }
+    .header__logo{
+        margin: 2rem 0;
+    
+    }
+    .header a{
+        margin-left: 0;
+        font-size: 4rem;
+    }
 }
 
 /* navegador */
@@ -239,4 +256,63 @@ h3{font-size: 2.4rem;}
         font-size: 15rem;
     }
 
+}
+
+
+/* SERVICIOS */
+#servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor__servicios{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem; 
+    margin: 2rem;
+}
+.servicio{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 15rem;
+    border: 1px solid rgba(0,0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0,0, 0, 0.5);
+    border-radius: 10px;
+}
+.servicio img{
+    width: 40px;
+    height: 40px;
+}
+.servicio h6{
+    margin: 1rem;
+    text-align: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+@media (min-width: 780px){
+    .contenedor__servicios{
+        grid-template-columns: repeat(4, 1fr);
+        margin: 3rem;
+    }
+    .servicio{
+        width: 30rem;
+        height: 25rem;
+    }
+    .servicio img{
+        width: 100px;
+        height: 100px;
+    }
+    .servicio h6{
+        font-size: 1.5rem;
+    }
+    .titulo__servicios{
+        font-size: 6rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
 }
