@@ -11,8 +11,25 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d7a266a481.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Centro deportivo</title>
 </head>
 <body>
@@ -31,11 +48,11 @@
     </nav>
     <main>
         <br><br>
-        <img style="display: block;margin: auto;"  src="media/copa_patain_nombre.jpg">  
+        <img style="display: block;margin: auto;"  src="media/copa_patain_nombre.jpg" data-aos="zoom-out-up" data-aos-duration="1000">  
         <br>
-            <div class="grid-container">
-                <h1> RESEÑA HISTORICA </h1>
-                <div class="item2">
+            <div class="grid-container" >
+                <h1 data-aos="fade-right"> RESEÑA HISTORICA </h1>
+                <div class="item2" data-aos="fade-right">
                    
                    <p>
                     La Copa Patain, nace  ante la necesidad de fortalecer la actividad física, el deporte y la recreación, 
@@ -47,17 +64,18 @@
                    </p>
                 </div>
                 
-                <h1> COPA PATAÍN 2022-2023 </h1>
-                <div class="item2">
+                <h1 data-aos="fade-left"> COPA PATAÍN 2022-2023 </h1>
+                <div class="item2" data-aos="zoom-in-up">
                     <br>
-                    <video width="640" height="360" style="margin-left: 260px;" controls>
+                    <!-- width="640" height="360" style="margin-left: 260px;" -->
+                    <video  controls>
                         <source src="media/copa_patain.mp4" type="video/mp4">
                     </video>
                     <br>
                     <br>
                 </div>
-                <h1> EQUIPOS PARTICIPANTES </h1>
-                <div class="item2">
+                <h1 data-aos="fade-right"> EQUIPOS PARTICIPANTES </h1>
+                <div class="item2" data-aos="zoom-in-down">
                     <br>
                    <table>
                     <tr style="background-color: yellow;" >
@@ -169,8 +187,8 @@
                   </table>
                 </div>
             </div>
-            <h1>MEMORIAS DE LA INAGURACIÓN </h1>
-            <div class="slide">
+            <h1 data-aos="fade-right">MEMORIAS DE LA INAGURACIÓN </h1>
+            <div class="slide" data-aos="fade-up" data-aos-anchor-placement="top-center">
                 <div class="slide-inner">
                     <input class="slide-open" type="radio" id="slide-1" 
                           name="slide" aria-hidden="true" hidden="" checked="checked">
@@ -329,8 +347,8 @@
                 </div>
             </div>
             <br>
-            <h1>Tabla de posiciones/Tabla acumulada 2022-2023</h1>
-            <div class="item2">
+            <h1 data-aos="fade-right">Tabla de posiciones/Tabla acumulada 2022-2023</h1>
+            <div class="item2" data-aos="fade-right">
                 <br>
                 <table>
                     <tr style="background-color: yellow;">
@@ -421,14 +439,14 @@
                     </table>
                     <br>
             </div>
-            <h1>
+            <h1 data-aos="zoom-in-down">
                 ¡Semifinales!
             </h1>
             <div class="grid-container-equipos">
-                <div class="equipo">
-                    <img style="width: 100%; height: 100%;" src="media/anuncio_semifinales.jpg">
+                <div class="equipo" data-aos="fade-right">
+                    <img  src="media/anuncio_semifinales.jpg">
                 </div>
-                <div class="equipo">
+                <div class="equipo" data-aos="fade-left">
                     <br>
                     <h2>SEMIFINAL 1:</h2>
                     <h3 style="border: 2px solid black;background-color: aqua;">Independiente VS Pichincha Sur</h3> 
@@ -450,4 +468,5 @@
         </div>
     </section>
 </body>
+<script src="js/aos_animate.js"></script>
 </html>
