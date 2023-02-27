@@ -426,3 +426,127 @@ h3{font-size: 2.4rem;}
     font-size: 2rem;
     color: #EBECF1;
 }
+
+
+/* Indice */
+
+#indice{
+    /* background-color: rgb(30,30,30); */
+    display: flex;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#indice .contenedor{
+    padding: 100px 0px;
+    
+}
+#indice a{
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0,0, 0, 0.5);
+    color: black;
+    background-color:white;
+    transition: ease-in-out 0.3s;
+    text-decoration: none;
+    
+    
+}
+#indice a:hover{
+    /* border: 2px solid rgb(255, 255, 255); */
+    background-color: rgb(40,40,40);
+    color: white;
+}
+#indice h2{
+    margin-top: 0;
+    font-size: 3em;
+    margin-bottom: 5rem;
+}
+#indice p{
+    display: none;
+}
+#indice .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    transition: all .5s;
+    
+}
+#indice .carta:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+#indice .carta h3{
+    margin: 1.5rem 0;
+    color: #EBECF1;
+
+}
+#indice .carta p{
+    color: #EBECF1;
+}
+.carta:first-child{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../media/fondo-cuppatain.jpg");
+}
+.carta:nth-child(2){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../media/gimnasia-laboral.jpg");
+}
+.carta:nth-child(3){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../media/formacion-deportiva.jpg");
+}
+.carta:nth-child(4){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../media/cyberseguridad.jpg");
+    grid-column: 2 / 3;
+}
+
+@media (min-width: 820px){
+     .items{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+    #indice p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    #indice h2{
+        font-size: 4em;
+    }
+    #indice h3{
+        margin-top: 0;
+    }
+    #indice .carta{
+        padding: 50px;
+        box-shadow: 2px 2px 10px rgb(30,30,30,1);
+    }
+    #indice button{
+        position:initial;
+    }
+}
+
+/* anuncios */
